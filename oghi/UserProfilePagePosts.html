@@ -1,0 +1,404 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Profile Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom scrollbar for dark mode */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #374151;
+      border-radius: 3px;
+    }
+  </style>
+ </head>
+ <body class="bg-black text-gray-300 font-sans">
+  <!-- Top Blue Header -->
+  <header class="bg-[#1DA1F2] flex items-center justify-between px-4 py-3">
+   <button aria-label="Back" class="w-10 h-10 rounded-full bg-[#0d6db8] flex items-center justify-center">
+   <a href="../Adin/homepage.html"> <i class="fas fa-arrow-left text-white text-lg">
+    </i></a>
+   </button>
+   <div class="flex space-x-4">
+    <button aria-label="More options" class="w-10 h-10 rounded-full bg-[#0d6db8] flex items-center justify-center">
+     <i class="fas fa-ellipsis-v text-white text-lg">
+     </i>
+    </button>
+   </div>
+  </header>
+  <main class="px-4 pb-20">
+   <!-- Profile Image and Edit Button -->
+   <div class="relative pt-4 pb-2 flex items-center justify-between">
+     <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-18 h-18 rounded-full border-4 border-black object-cover" height="50" src="https://i.pinimg.com/564x/2e/80/f7/2e80f7295ebdc16782604dd853c78c6d.jpg" width="50"/>
+    </div>
+   </div>
+   <!-- Name, Verified, Username -->
+   <div class="mt-1">
+    <h1 class="text-2xl font-extrabold text-gray-200 flex items-center space-x-2">
+     <span>
+      Zalri Prayit
+     </span>
+       <path d="M7 13l3 3 7-7" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+       </path>
+      </g>
+     </svg>
+     <span class="text-[#1DA1F2] font-semibold">
+     </span>
+    </h1>
+    <p class="text-gray-500 text-base mt-0.5">
+        @berdoaZalr66047
+    </p>
+   </div>
+   <!-- Birth and Joined info -->
+   <div class="flex items-center space-x-4 mt-3 text-gray-500 text-sm">
+    <div class="flex items-center space-x-1">
+     <i class="fas fa-map-marker-alt text-gray-500 text-xs">
+     </i>
+     <span>
+      Born June 21, 2004
+     </span>
+    </div>
+    <div class="flex items-center space-x-1">
+     <i class="far fa-calendar-alt text-gray-500 text-xs">
+     </i>
+     <span>
+      Joined July 2024
+     </span>
+    </div>
+   </div>
+   <!-- Following and Followers -->
+   <div class="flex space-x-6 mt-3 text-gray-400 text-sm">
+    <div>
+     <span class="font-extrabold text-gray-200">
+      16
+     </span>
+     Following
+    </div>
+    <div>
+     <span class="font-extrabold text-gray-200">
+      9
+     </span>
+     Followers
+    </div>
+   </div>
+  <!-- Navigation Tabs -->
+   <nav class="flex space-x-6 border-b border-gray-700 mt-5 justify-around scrollbar-hide">
+    <a href="UserProfilePagePosts.html">
+    <button class="text-white font-extrabold border-b-4 border-[#1DA1F2] pb-2 whitespace-nowrap  flex-1 text-center "type="button">
+     Post
+    </button></a>
+   <a href="../oghi/Replies.html"> <button class="text-gray-600 font-semibold pb-2 whitespace-nowrap flex-1 text-center" type="button">
+     Replies
+    </button></a>
+    <a href="../oghi/highlight.html">
+    <button class="text-gray-600 font-semibold pb-2 whitespace-nowrap flex-1 text-center" type="button">
+     Highlights
+    </button></a>
+    <a href="../oghi/articles.html">
+    <button class="text-gray-600 font-semibold pb-2 whitespace-nowrap flex-1 text-center" type="button">
+     Articles
+    </button></a>
+    <a href="../oghi/media.html">
+    <button class="text-gray-600 font-semibold pb-2 whitespace-nowrap flex-1 text-center" type="button">
+     Media
+    </button></a>
+   </nav>
+   <!-- Posts List -->
+   <section class="mt-3 space-y-4">
+    <!-- Post 1 -->
+    <article class="flex flex-col space-y-2">
+     <header class="flex items-center space-x-2 text-gray-500 text-sm font-semibold">
+      <i class="fas fa-users">
+      </i>
+      <span>
+       Mobile Legends: Bang Bang ID
+      </span>
+     </header>
+     <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" src="https://i.pinimg.com/564x/2e/80/f7/2e80f7295ebdc16782604dd853c78c6d.jpg"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+           Zalri Prayit
+        </span>
+        <span class="text-gray-400">
+            @berdoaZalr66047
+        </span>
+        <span class="text-gray-400">
+         · 17 Mar
+        </span>
+       </div>
+       <p class="text-white mt-1">
+        Jangan biarkan tugasmu mengganggu waktu push rankmu, ingat tugas sementara highest rank immortal selamanya
+       </p>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+         <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+          212
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        <button aria-label="Toggle visibility" class="hover:text-white">
+         <i class="fas fa-ban">
+         </i>
+        </button>
+        <button aria-label="More options" class="hover:text-white">
+         <i class="fas fa-ellipsis-v">
+         </i>
+        </button>
+       </div>
+      </div>
+     </div>
+    </article>
+    <!-- Post 2 -->
+    <article class="flex flex-col space-y-2">
+     <header class="flex items-center space-x-2 text-gray-500 text-sm font-semibold">
+      <i class="fas fa-users">
+      </i>
+      <span>
+       Komunitas mancing hemat mania
+      </span>
+     </header>
+     <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" height="48" src= https://i.pinimg.com/564x/2e/80/f7/2e80f7295ebdc16782604dd853c78c6d.jpg width="48"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+           Zalri Prayit
+        </span>
+        <span class="text-gray-400">
+            @berdoaZalr66047
+        </span>
+        <span class="text-gray-400">
+         · 22 Mar
+        </span>
+       </div>
+       <p class="text-white mt-1">
+        rek rekomendasi pelet yg murah di daerah surabaya dong, biar 1 strike 1 fish HAHAHAHA
+       </p>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+         <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+          196
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        <button aria-label="Toggle visibility" class="hover:text-white">
+         <i class="fas fa-ban">
+         </i>
+        </button>
+        <button aria-label="More options" class="hover:text-white">
+         <i class="fas fa-ellipsis-v">
+         </i>
+        </button>
+       </div>
+      </div>
+     </div>
+    </article>
+    <!-- Post 3 -->
+    <article class="flex flex-col space-y-2">
+     <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" height="48" src=https://i.pinimg.com/564x/2e/80/f7/2e80f7295ebdc16782604dd853c78c6d.jpg width="48"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+           Zalri Prayit
+        </span>
+        <span class="text-gray-400">
+            @berdoaZalr66047
+        </span>
+        <span class="text-gray-400">
+         · 29 Mar
+        </span>
+       </div>
+       <div class="mt-2">
+       <img alt="gambar" height="400px" src=http://awsimages.detik.net.id/community/media/visual/2023/09/05/aksi-viral-cleon-levin-wisudawan-yang-membawa-tulisan-info-loker-usai-menjalani-wisuda_43.jpeg?w600&q90 width="200px"/>
+      </div>
+       <p class="text-white mt-1">
+        info magang daerah surabaya dan sekitarnya untuk anak smk bossqq
+       </p>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+         <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+          210
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        <button aria-label="Toggle visibility" class="hover:text-white">
+         <i class="fas fa-ban">
+         </i>
+        </button>
+        <button aria-label="More options" class="hover:text-white">
+         <i class="fas fa-ellipsis-v">
+         </i>
+        </button>
+       </div>
+      </div>
+     </div>
+    </article>
+    <!-- Post 4 -->
+    <article class="flex flex-col space-y-2">
+     </header>
+     <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" height="48" src=https://i.pinimg.com/564x/2e/80/f7/2e80f7295ebdc16782604dd853c78c6d.jpg width="48"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+            Zalri Prayit
+        </span>
+        <span class="text-gray-400">
+            @berdoaZalr66047
+        </span>
+        <span class="text-gray-400">
+         · 3 May
+        </span>
+       </div>
+        <div class="mt-2">
+       <img alt="gambar" height="400px" src=https://cdn.antaranews.com/cache/1200x800/2015/04/2015042020120509Anggrek-090512.jpg width="200px"/>
+      </div>
+       <p class="text-white mt-1">
+        infokan doksli anggrek mekar pontianak 4K ULTRA HD
+       </p>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+         <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+          233
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        <button aria-label="Toggle visibility" class="hover:text-white">
+         <i class="fas fa-ban">
+         </i>
+        </button>
+        <button aria-label="More options" class="hover:text-white">
+         <i class="fas fa-ellipsis-v">
+         </i>
+        </button>
+       </div>
+      </div>
+    </div>
+  <!-- Bottom Navigation -->
+    <div class="fixed bottom-0 left-0 right-0 bg-black border-t border-gray-700">
+      <div class="flex justify-around py-2">
+      <i class="fas fa-home text-white text-xl text-blue-500 border-b-2 border-blue-500">
+       </i>
+       <a href="../Adin/usn pencarian.html">
+       <i class="fas fa-search text-xl"> 
+       </i>
+      </a>
+       <a href="../Siong/notificationAll.html">
+       <i class="fas fa-bell text-white text-xl relative">
+        <span class="absolute top-0 right-0 bg-blue-500 text-xs rounded-full px-1">
+         3
+        </span>
+       </i>
+      </a>
+      <a href="../rijal/mail.html">
+       <i class="fas fa-envelope text-white text-xl">
+       </i>
+      </a>
+       <span>
+        <a href="../Firman/komuv2.html">
+        <i class="fas fa-users text-white"></i>
+        </a>
+       </span>
+       
+  <!-- Floating Action Button -->
+  <button aria-label="New post" class="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-[#1DA1F2] flex items-center justify-center shadow-lg">
+   <i class="fas fa-plus text-white text-3xl">
+   </i>
+  </button>
+ </body>
+</html>

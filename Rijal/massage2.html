@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat Tuan X</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    /* Custom scrollbar for chat area */
+    .scrollbar-thin::-webkit-scrollbar {
+      width: 4px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+      background-color: #374151; /* Tailwind slate-700 */
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="bg-black text-gray-300 font-sans min-h-screen flex flex-col">
+
+
+  <!-- Chat header -->
+  <div class="flex items-center px-4 py-3 border-b border-gray-800 text-white text-lg font-bold">
+    <button aria-label="Back" class="mr-4 text-white text-2xl">
+      <a href="mail.html">
+      <i class="fas fa-arrow-left">
+      </i>
+    </a>
+    </button>
+    Naranel
+    <button aria-label="Info" class="ml-auto text-white text-2xl">
+      <a href="i mail1.html">
+      <i class="fas fa-info-circle">
+      </i>
+    </a>
+    </button>
+  </div>
+
+  <!-- Profile info -->
+  <div class="flex flex-col items-center text-center px-4 py-6 border-b border-gray-800">
+    <div class="w-20 h-20 rounded-full bg-purple-700 flex items-center justify-center text-white text-4xl font-semibold select-none">
+      N
+    </div>
+    <p class="mt-2 font-bold text-white text-lg">Naranel</p>
+    <p class="text-gray-500">@Nnael</p>
+    <div class="flex justify-center mt-4 space-x-12 text-gray-500 text-sm max-w-xs w-full">
+      <div class="text-left">
+        <p>Bergabung pada</p>
+        <p>Januari 2022</p>
+      </div>
+      <div class="text-center">
+        <p>Bahasa Indonesia: 2</p>
+      </div>
+      <div class="text-right">
+        <p>Pengik</p>
+        <p>ut</p>
+      </div>
+    </div>
+    <p class="mt-4 text-gray-500 text-sm max-w-xs">Tidak diikuti oleh siapa pun yang Anda ikuti</p>
+  </div>
+
+  <!-- Chat messages container -->
+  <main class="flex-1 overflow-y-auto scrollbar-thin px-4 py-4 space-y-6">
+    <!-- Message from user (blue bubble, right aligned) -->
+    <div class="flex justify-end">
+      <div class="bg-blue-500 text-white rounded-full px-5 py-2 max-w-xs break-words">
+        yong aku mau ngopi bareng aku lagi pingin ngopi bisa nggak
+      </div>
+    </div>
+    <p class="text-gray-500 text-xs text-right pr-1">12 April 2025, 18:18 WIB</p>
+
+    <!-- Messages from other (dark bubbles, left aligned) -->
+    <div class="flex flex-col space-y-2 max-w-xs">
+      <div class="bg-gray-800 rounded-full px-5 py-2 break-words text-white">ayo</div>
+      <div class="bg-gray-800 rounded-full px-5 py-2 break-words text-white">nang ndi?</div>
+      <div class="bg-gray-800 rounded-full px-5 py-2 break-words text-white">Stk ta opo nak kafe?</div>
+      <div class="bg-gray-800 rounded-full px-5 py-2 break-words text-white">aku ada saran sal bagaimana kita buat groub sama ogik nanti ke pantai</div>
+    </div>
+    <p class="text-gray-500 text-xs pl-1">17 April 2025, 12:57 WIB</p>
+    <!-- Message from user (blue bubble, right aligned) -->
+    <div class="flex justify-end">
+      <div class="bg-blue-500 text-white rounded-full px-5 py-2 max-w-xs break-words">
+        yong aku mau ngopi bareng aku lagi pingin ngopi bisa nggak
+      </div>
+    </div>
+    <p class="text-gray-500 text-xs text-right pr-1">12 April 2025, 18:18 WIB</p>
+  </main>
+
+  <!-- Message input area -->
+  <form id="chatForm" class="flex items-center space-x-3 px-4 py-3 bg-[#1a1a1a] border-t border-gray-700" autocomplete="off">
+   <button aria-label="Add image" class="text-blue-500 text-xl" type="button">
+    <i class="far fa-image">
+    </i>
+   </button>
+   <button aria-label="Add GIF" class="text-blue-500 text-xl" type="button">
+    <i class="far fa-file-video">
+    </i>
+   </button>
+   <input autocomplete="off" class="flex-1 bg-[#2c2c3a] rounded-full py-2 px-4 text-gray-400 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" id="messageInput" name="message" placeholder="Mulai pesan baru" type="text"/>
+   <button aria-label="Send message" class="text-blue-500 text-2xl select-none" type="submit">
+    <i class="fas fa-paper-plane">
+    </i>
+   </button>
+  </form>
+  <script>
+   const form = document.getElementById('chatForm');
+    const input = document.getElementById('messageInput');
+    const messagesContainer = document.getElementById('messages');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const text = input.value.trim();
+      if (text === '') return;
+
+      // Create message bubble container
+      const messageWrapper = document.createElement('div');
+      messageWrapper.className = 'flex justify-end';
+
+      // Create message bubble
+      const messageBubble = document.createElement('div');
+      messageBubble.className = 'bg-blue-500 text-white rounded-full px-4 py-2 max-w-[40vw] text-center select-none';
+      messageBubble.style.fontSize = '1rem';
+      messageBubble.style.lineHeight = '1.25rem';
+      messageBubble.textContent = text;
+
+      messageWrapper.appendChild(messageBubble);
+      messagesContainer.appendChild(messageWrapper);
+
+      // Scroll to bottom
+      messagesContainer.scrollTop = messagesContainer.scrollHeight;
+
+      // Clear input
+      input.value = '';
+      input.focus();
+    });
+  </script>
+</body>
+</html>

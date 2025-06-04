@@ -1,0 +1,143 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Chat UI with Send Message
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom scrollbar for dark mode */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #4b5563;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  </style>
+ </head>
+ <body class="bg-black text-white font-sans min-h-screen flex flex-col">
+ 
+
+  <!-- Chat header -->
+  <div class="flex items-center px-4 py-3 border-b border-gray-800 text-white text-lg font-bold">
+    <button aria-label="Back" class="mr-4 text-white text-2xl">
+      <a href="mail.html">
+      <i class="fas fa-arrow-left">
+      </i>
+    </a>
+    </button>
+    Adin
+  <button aria-label="Info" class="ml-auto text-white text-2xl">
+      <a href="i mail5.html">
+      <i class="fas fa-info-circle">
+      </i>
+    </a>
+    </button>
+  </div>
+  <!-- Profile section -->
+   <div class="flex flex-col items-center text-center px-4 py-6 border-b border-gray-800">
+    <div class="w-20 h-20 rounded-full bg-purple-700 flex items-center justify-center text-white text-4xl font-semibold select-none">
+      O
+    </div>
+    Adin
+   </div>
+   <div class="text-gray-400 text-sm select-none">
+    @adinn
+   </div>
+   <div class="text-gray-500 text-sm select-none">
+    Bergabung Juli 2024 Bahasa Indonesia: 9 Pengikut
+   </div>
+   <div class="flex items-center space-x-2 text-gray-400 text-sm select-none mt-1">
+    <div class="flex items-center justify-center rounded-full bg-purple-600 w-6 h-6 font-semibold">
+     M
+    </div>
+    <div>
+     Diikuti oleh Tuan X
+    </div>
+   </div>
+  </div>
+  <!-- Chat messages container -->
+  <div id="messages" class="flex-1 overflow-y-auto px-4 py-6 space-y-6">
+   <div class="flex justify-end">
+    <div class="bg-blue-500 text-white rounded-full px-4 py-2 max-w-[40vw] text-center select-none" style="font-size: 1rem; line-height: 1.25rem;">
+     gik
+    </div>
+   </div>
+
+   <!-- Message bubble with gif -->
+   <div class="self-start bg-[#121212] rounded-3xl p-2 max-w-[80%] relative shadow-[0_0_15px_#000000]">
+    <img alt="GIF of man in suit clapping hands with text WELL DONE" class="rounded-3xl w-full h-auto" height="180" src="https://storage.googleapis.com/a1aa/image/c9863904-3e85-48c3-e5b0-2adf4b6e36de.jpg" width="300"/>
+    <div class="absolute bottom-2 left-3 text-white font-bold text-sm flex items-center space-x-2">
+     <span class="text-lg font-normal">
+      ❚❚
+     </span>
+     <span>
+      Gambar emoji
+     </span>
+    </div>
+   </div>
+   <!-- Timestamp and language info -->
+   <p class="text-gray-600 text-sm self-start max-w-[80%]">
+    Pukul 23.25 WIB Bahasa Indonesia: Terkirim
+   </p>
+  </div>
+   
+  </div>
+  <!-- Message input area -->
+  <form id="chatForm" class="flex items-center space-x-3 px-4 py-3 bg-[#1a1a1a] border-t border-gray-700" autocomplete="off">
+   <button aria-label="Add image" class="text-blue-500 text-xl" type="button">
+    <i class="far fa-image">
+    </i>
+   </button>
+   <button aria-label="Add GIF" class="text-blue-500 text-xl" type="button">
+    <i class="far fa-file-video">
+    </i>
+   </button>
+   <input autocomplete="off" class="flex-1 bg-[#2c2c3a] rounded-full py-2 px-4 text-gray-400 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" id="messageInput" name="message" placeholder="Mulai pesan baru" type="text"/>
+   <button aria-label="Send message" class="text-blue-500 text-2xl select-none" type="submit">
+    <i class="fas fa-paper-plane">
+    </i>
+   </button>
+  </form>
+  <script>
+   const form = document.getElementById('chatForm');
+    const input = document.getElementById('messageInput');
+    const messagesContainer = document.getElementById('messages');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const text = input.value.trim();
+      if (text === '') return;
+
+      // Create message bubble container
+      const messageWrapper = document.createElement('div');
+      messageWrapper.className = 'flex justify-end';
+
+      // Create message bubble
+      const messageBubble = document.createElement('div');
+      messageBubble.className = 'bg-blue-500 text-white rounded-full px-4 py-2 max-w-[40vw] text-center select-none';
+      messageBubble.style.fontSize = '1rem';
+      messageBubble.style.lineHeight = '1.25rem';
+      messageBubble.textContent = text;
+
+      messageWrapper.appendChild(messageBubble);
+      messagesContainer.appendChild(messageWrapper);
+
+      // Scroll to bottom
+      messagesContainer.scrollTop = messagesContainer.scrollHeight;
+
+      // Clear input
+      input.value = '';
+      input.focus();
+    });
+  </script>
+ </body>
+</html>

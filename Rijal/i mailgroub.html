@@ -1,0 +1,174 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Group Info
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom toggle switch styling to match the screenshot */
+    input[type="checkbox"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 2.5rem;
+      height: 1.25rem;
+      background-color: #374151; /* Tailwind slate-700 */
+      border-radius: 9999px;
+      position: relative;
+      cursor: pointer;
+      outline: none;
+      transition: background-color 0.2s ease-in-out;
+    }
+    input[type="checkbox"]:checked {
+      background-color: #3b82f6; /* Tailwind blue-500 */
+    }
+    input[type="checkbox"]::before {
+      content: "";
+      position: absolute;
+      top: 0.125rem;
+      left: 0.125rem;
+      width: 1rem;
+      height: 1rem;
+      background-color: white;
+      border-radius: 9999px;
+      transition: transform 0.2s ease-in-out;
+      box-shadow: 0 1px 2px rgb(0 0 0 / 0.2);
+    }
+    input[type="checkbox"]:checked::before {
+      transform: translateX(1.25rem);
+    }
+  </style>
+ </head>
+ <body class="bg-black text-white font-sans">
+   <!-- Header -->
+   <header class="flex items-center gap-4 px-4 py-3 border-b border-gray-800">
+    <button aria-label="Back" class="text-white text-2xl leading-none">
+    <a href="group massage.html">
+     <i class="fas fa-arrow-left">
+     </i>
+     </a>
+    </button>
+    <h1 class="font-extrabold text-lg">
+     Info grup
+    </h1>
+   </header>
+   <!-- Group members summary -->
+   <section class="flex items-center gap-3 px-4 py-3 border-b border-gray-800">
+    <div class="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
+     <img alt="Photo of a man in green shirt outdoor" class="object-cover w-full h-full" height="40" src="https://storage.googleapis.com/a1aa/image/7a1108ca-896b-4852-ee96-f40648e1c1a2.jpg" width="40"/>
+     <div class="absolute top-0 right-0 bottom-0 left-1/2 bg-purple-700">
+     </div>
+     <span class="absolute top-0 left-0 bottom-0 right-1/2 flex items-center justify-center text-white font-bold text-lg">
+      N
+     </span>
+    </div>
+    <p class="font-extrabold text-white text-base flex-1 truncate">
+     Naranel, ogik tzy
+    </p>
+    <button class="text-blue-600 font-normal text-base">
+     Sunting
+    </button>
+   </section>
+   <!-- Rakyat heading -->
+   <section class="px-4 py-4 border-b border-gray-800">
+    <h2 class="font-extrabold text-white text-xl mb-4">
+     Rakyat
+    </h2>
+    <!-- User 1 -->
+    <div class="flex items-center justify-between mb-4">
+     <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-purple-700 flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
+       N
+      </div>
+      <div>
+       <p class="font-extrabold text-white text-base leading-none">
+        Naranel
+       </p>
+       <div class="flex items-center gap-2">
+        <p class="text-gray-500 text-sm leading-none">
+         @Nnael
+        </p>
+        <span class="bg-gray-700 text-gray-300 text-xs rounded-md px-2 py-0.5">
+         Mengikuti Anda
+        </span>
+       </div>
+      </div>
+     </div>
+     <button class="border border-gray-500 rounded-full px-4 py-1 text-white font-semibold text-sm">
+      Mengikuti
+     </button>
+    </div>
+    <!-- User 2 -->
+    <div class="flex items-center justify-between mb-4">
+     <div class="flex items-center gap-3">
+      <div class="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
+       <img alt="Photo of a man in red and black jersey outdoor" class="object-cover w-full h-full" height="40" src="https://asset-2.tstatic.net/aceh/foto/bank/images/2710cristiano-ronaldo-lawan-liverpool.jpg" width="40"/>
+      </div>
+      <div>
+       <p class="font-extrabold text-white text-base leading-none">
+        ogik tzy
+       </p>
+       <div class="flex items-center gap-2">
+        <p class="text-gray-500 text-sm leading-none">
+         @Lyerok
+        </p>
+        <span class="bg-gray-700 text-gray-300 text-xs rounded-md px-2 py-0.5">
+         Mengikuti Anda
+        </span>
+       </div>
+      </div>
+     </div>
+     <button class="border border-gray-500 rounded-full px-4 py-1 text-white font-semibold text-sm">
+      Mengikuti
+     </button>
+    </div>
+    <p class="text-blue-600 text-center cursor-pointer text-base font-normal">
+     Tambahkan orang
+    </p>
+   </section>
+   <!-- Pemberitahuan section -->
+   <section class="px-4 py-4 border-b border-gray-800">
+    <h2 class="font-extrabold text-white text-xl mb-4">
+     Pemberitahuan
+    </h2>
+    <!-- Notification 1 -->
+    <div class="mb-2">
+     <div class="flex items-center justify-between mb-1">
+      <p class="text-white text-base font-normal leading-none">
+       Tunda notifikasi dari Tuan X, ogik tzy
+      </p>
+      <input aria-label="Toggle notification 1" checked="" type="checkbox"/>
+     </div>
+     <p class="text-gray-600 text-sm leading-tight">
+      Ditunda sampai pukul 02:30 PM
+     </p>
+    </div>
+    <!-- Notification 2 -->
+    <div>
+     <div class="flex items-center justify-between mb-1">
+      <p class="text-white text-base font-normal leading-none">
+       Tunda penyebutan
+      </p>
+      <input aria-label="Toggle notification 2" checked="" type="checkbox"/>
+     </div>
+     <p class="text-gray-600 text-sm leading-tight">
+      Nonaktifkan notifikasi saat orang menyebut Anda dalam percakapan ini.
+     </p>
+    </div>
+   </section>
+   <!-- Footer actions -->
+   <section class="px-4 py-6 text-center space-y-6">
+    <button class="text-blue-600 font-normal text-base">
+     Laporkan percakapan
+    </button>
+    <button class="text-red-600 font-normal text-base">
+     Tinggalkan percakapan
+    </button>
+   </section>
+  </div>
+ </body>
+</html>

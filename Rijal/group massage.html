@@ -1,0 +1,116 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Chat UI
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom scrollbar for chat container */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #4b5563;
+    border-radius: 9999px;
+  }
+  </style>
+ </head>
+ <body class="bg-black text-white font-sans">
+  <div class="min-h-screen flex flex-col">
+  <!-- Chat header -->
+  <div class="flex items-center px-4 py-3 border-b border-gray-800 text-white text-lg font-bold">
+     <button aria-label="Back" class="mr-4 text-white text-2xl">
+      <a href="mail.html">
+      <i class="fas fa-arrow-left">
+      </i>
+    </a>
+    </button> <div class="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center text-white font-semibold text-lg">
+        N
+     </div>
+     <img alt="Profile picture of a man with short hair wearing a red and black shirt" class="w-8 h-8 rounded-full object-cover" height="32" src="https://asset-2.tstatic.net/aceh/foto/bank/images/2710cristiano-ronaldo-lawan-liverpool.jpg" width="32"/>
+    
+    Naranel,ogik tzy,zalri prayit
+    <button aria-label="Info" class="ml-auto text-white text-2xl">
+      <a href="i mailgroub.html">
+      <i class="fas fa-info-circle">
+      </i>
+    </a>
+    </button>
+  </div>
+   <!-- Chat messages container -->
+   <main class="flex-1 overflow-y-auto px-4 py-3 scrollbar-thin">
+    <!-- Right side message "tes" -->
+    <div class="flex justify-end mb-3">
+     <div class="bg-[#0a8fec] text-white text-base rounded-full px-4 py-2 max-w-xs break-words">
+      Halo guys besok kita jadi ke pantai kah
+     </div>
+    </div>
+    <!-- Center info text -->
+    <div class="text-center text-gray-500 text-sm mb-6">
+     <span class="font-semibold">
+      WIB
+     </span>
+     Bahasa Indonesia: Dilihat oleh semua orang
+    </div>
+    <!-- Left side avatar and message bubble with "P" -->
+    <div class="flex items-center space-x-2 mb-3">
+     <div class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white font-semibold text-lg">
+      N
+     </div>
+     <div class="bg-gray-800 rounded-tl-3xl rounded-tr-xl rounded-br-xl rounded-bl-3xl w-10 h-10 flex items-center justify-center text-white font-semibold text-lg">
+      iya
+     </div>
+    </div>
+    <div class="text-gray-500 text-sm mb-6 ml-12">
+     Naranel · 17:35
+    </div>
+    <!-- Right side messages "Oke" and "mana ogik" -->
+    <div class="flex flex-col items-end space-y-1 mb-3 max-w-xs ml-auto">
+     <div class="bg-[#0a8fec] text-white text-base rounded-full px-4 py-2 break-words">
+      oke kalo gitu jadi besok ya akan ku persiapkan 
+     </div>
+     <div class="text-gray-500 text-xs">
+      Dilihat oleh 1 orang
+     </div>
+     <div class="bg-[#0a8fec] text-white text-base rounded-full px-4 py-2 break-words">
+      mana ogik,ogik bisa ikut ta 
+     </div>
+    </div>
+    <!-- Center info text -->
+    <div class="text-center text-gray-500 text-sm mb-6">
+     17.40 WIB Bahasa Indonesia: Dilihat oleh 1 orang
+    </div>
+    <!-- Left side avatar and message "ayo makan sate taichan" -->
+    <div class="flex items-start space-x-3 mb-3">
+     <img alt="Profile picture of a man with short hair wearing a red and black shirt" class="w-10 h-10 rounded-full object-cover" height="40" src="https://storage.googleapis.com/a1aa/image/401498db-632c-4827-cf44-468fa5dfe6ab.jpg" width="40"/>
+     <div class="bg-gray-800 rounded-tl-xl rounded-tr-3xl rounded-br-3xl rounded-bl-xl px-4 py-2 max-w-xs text-white text-base break-words">
+      ayo aja aku ngikut aku juga mau makan sate taichan juga di sana ada nggak
+     </div>
+    </div>
+    <div class="text-gray-500 text-sm ml-14">
+     ogik tzy · 18:32
+    </div>
+   </main>
+   <!-- Bottom input area -->
+   <footer class="bg-[#1f1f1f] p-3 flex items-center space-x-3">
+    <button aria-label="Add image" class="text-[#0a8fec] text-xl">
+     <i class="far fa-image">
+     </i>
+    </button>
+    <button aria-label="Add GIF" class="text-[#0a8fec] text-xl">
+     <i class="far fa-file-video">
+     </i>
+    </button>
+    <input class="flex-1 bg-[#2a2a2a] rounded-full py-2 px-4 text-white placeholder:text-white placeholder:opacity-70 focus:outline-none" placeholder="Mulai pesan baru" type="text"/>
+    <button aria-label="Send" class="text-[#0a8fec] text-2xl">
+     <i class="fas fa-paper-plane">
+     </i>
+    </button>
+   </footer>
+  </div>
+ </body>
+</html>

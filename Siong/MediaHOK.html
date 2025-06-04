@@ -1,0 +1,356 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Profile Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom scrollbar for dark mode */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #374151;
+      border-radius: 3px;
+    }
+    .grey{
+
+    }
+  </style>
+ </head>
+ <body class="bg-black text-gray-300 font-sans">
+  <!-- Top Blue Header -->
+<header class=" bg-[#1DA1F2] flex items-center justify-between px-4 py-3  ">
+    
+   <button aria-label="Back" class="w-10 h-10 rounded-full bg-[#1DA1F2] flex items-center justify-center">
+    <a href="following.html"> <i class="fas fa-arrow-left text-white text-lg">
+    </i>
+</a>
+   </button>
+   <div class="flex space-x-4">
+    <button aria-label="Search" class="w-10 h-10 rounded-full bg-[#0d6db8] flex items-center justify-center">
+     <a href="following.html">
+     <i class="fas fa-search text-white text-lg">
+     </i>
+     </a>
+    </button>
+    <button aria-label="More options" class="w-10 h-10 rounded-full bg-[#0d6db8] flex items-center justify-center">
+     <i class="fas fa-ellipsis-v text-white text-lg">
+     </i>
+    </button>
+   </div>
+  </header>
+  <main class="px-4 pb-20">
+   <!-- Profile Image and Edit Button -->
+   <div class="relative pt-4 pb-2 flex items-center justify-between">
+    <div class="relative -mt-16">
+     <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-18 h-18 rounded-full border-4 border-black object-cover" height="50" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQLRM7QRyYNJkGl-b9_JNjMSGNmxC1EJFOuSQObOtRqz8L5L-QXBnNsQE&s=10 width="50"/>
+    </div>
+    
+    <button class="border border-gray-600 rounded-full px-4 py-2 text-white font-semibold text-sm hover:bg-gray-800" type="button">
+     Mengikuti
+    </button>
+   </div>
+   <!-- Name, Verified, Username -->
+   <div class="mt-1">
+    <h1 class="text-2xl font-extrabold text-gray-200 flex items-center space-x-2">
+     <span>
+      Honor Of Kings Official
+     </span>
+     <svg aria-label="Verified badge" class="w-5 h-5 text-[#1DA1F2]" fill="currentColor" role="img" viewbox="0 0 24 24">
+      <g fill="none" fill-rule="evenodd">
+       <circle cx="12" cy="12" fill="yellow" r="12">
+       </circle>
+       <path d="M7 13l3 3 7-7" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+       </path>
+      </g>
+     </svg>
+    </h1>
+    <p class="text-gray-500 text-base mt-0.5">
+     @HOK_Ofc
+    </p>
+    <h2>
+<span>
+  戦略は無限大! 世界が熱狂するチームバトル! 『Honor of Kings』 公式Xです。現在好評配信中! 最高の仲間と最高の勝利を! 公式 Discord ➡️ <span class="text-blue-600"><a href="https://discord.com/invite/ExBmZdRjCR">discord.gg/ExBmZdRjCR </a></span> ダウンロードはこちら
+</span>
+    </h2>
+    <h3>
+      <span class="text-blue-500">
+        terjemahkan Bio
+      </span>
+    </h3>
+   </div>
+   <!-- Birth and Joined info -->
+   <div class="flex items-center space-x-4 mt-3 text-gray-500 text-sm">
+    <div class="flex items-center space-x-1">
+     <i class="far fa-calendar-alt text-gray-500 text-xs">
+     </i>
+     <span>
+      Joined January 2016
+     </span>
+    </div>
+   </div>
+   <!-- Following and Followers -->
+   <div class="flex space-x-6 mt-3 text-gray-400 text-sm">
+    <div>
+     <span class="font-extrabold text-gray-200">
+      17
+     </span>
+     Following
+    </div>
+    <div>
+     <span class="font-extrabold text-gray-200">
+      1.126.851
+     </span>
+     Followers
+    </div>
+   </div>
+   <!-- Navigation Tabs -->
+   <nav class="flex justify-around space-x-6 border-b border-gray-700 mt-5 overflow-x-auto scrollbar-hide">
+    <a href="ProfileHOK.html">
+    <button class="text-gray-600 font-extrabold  pb-2 whitespace-nowrap" type="button">
+     Posts
+    </button></a>
+    <button class="text-gray-600 font-semibold pb-2 whitespace-nowrap" type="button">
+     Replies
+    </button>
+    <a href="HighlightHOK.html">
+    <button class="text-gray-600 font-semibold pb-2 whitespace-nowrap" type="button">
+     Highlights
+    </button></a>
+    <button class="text-gray-600 font-semibold pb-2 whitespace-nowrap" type="button">
+     Articles
+    </button>
+    <button class="text-white border-b-4 border-[#1DA1F2] font-semibold  pb-2 whitespace-nowrap" type="button">
+     Media
+    </button>
+   </nav>
+  <!-- Posts List -->
+   <section class="mt-3 space-y-4">
+    <!-- Post 1 -->
+     <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" height="48" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQLRM7QRyYNJkGl-b9_JNjMSGNmxC1EJFOuSQObOtRqz8L5L-QXBnNsQE&s=10  width="48"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+          Honor Of Kings Official
+        </span>
+        <span class="text-gray-400">
+         · 2 hari
+        </span>
+        <button aria-label="More options" class="hover:text-white">
+          <i class="fas fa-ellipsis-v">
+          </i>
+         </button>
+       </div>
+       <p class="text-white mt-1">
+        Para penyihir jujutsu kembali membawa bala bantuan!!!!
+       <br>Nantikanlah phase  2 dari <span class="text-blue-500">#HOKxJujutsu</span> 
+      </p>
+      <div class="mt-2">
+        <img alt="Advertisement image showing a phone with Taylor Swift playlist" height="400" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDSmo-M8STcS6s9_ZN94ctvL73zE_WEK_MLyUiF5PLQQgzsfE_w_DfIw&s=10" width="600"/>
+       </div>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+          <div class="flex space-x-2">
+            <span class="flex space-x-2">
+            4,5rb
+           </span>
+          </div>
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+          <div class="flex space-x-2">
+         <span class="flex space-x-2">
+          2,3rb
+         </span>
+          </div>
+          <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <div class="flex space-x-2">
+         <span class="flex space-x-2">
+          7,7rb
+         </span>
+          </div>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+          1,1rb
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        
+       </div>
+      </div>
+     </div>
+    </article>
+   
+    <!-- Post 1 -->
+     <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" height="48" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQLRM7QRyYNJkGl-b9_JNjMSGNmxC1EJFOuSQObOtRqz8L5L-QXBnNsQE&s=10  width="48"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+          Honor Of Kings Official
+        </span>
+        <span class="text-gray-400">
+         · 14 hari
+        </span>
+        <button aria-label="More options" class="hover:text-white">
+          <i class="fas fa-ellipsis-v">
+          </i>
+         </button>
+       </div>
+       <p class="text-white mt-1">
+    Akhirnya Honor Of Kings Collaboration dengan Sanrio??
+       <br>Nantikanlah pada 12/5<span class="text-blue-500">#HOKxSanrio</span> 
+      </p>
+      <div class="mt-2">
+        <img alt="Advertisement image showing a phone with Taylor Swift playlist" height="400" src="https://i.ytimg.com/vi/T69terALJHo/maxresdefault.jpg" width="600"/>
+       </div>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+          <div class="flex space-x-2">
+            <span class="flex space-x-2">
+            10,5rb
+           </span>
+          </div>
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+          <div class="flex space-x-2">
+         <span class="flex space-x-2">
+          5,3rb
+         </span>
+          </div>
+          <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <div class="flex space-x-2">
+         <span class="flex space-x-2">
+          7,9rb
+         </span>
+          </div>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+          4,1rb
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        
+       </div>
+      </div>
+     </div>
+    </article>
+   
+     <!-- Post 1 -->
+     <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" height="48" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQLRM7QRyYNJkGl-b9_JNjMSGNmxC1EJFOuSQObOtRqz8L5L-QXBnNsQE&s=10  width="48"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+          Honor Of Kings Official
+        </span>
+        <span class="text-gray-400">
+         · 12 maret 
+        </span>
+        <button aria-label="More options" class="hover:text-white">
+          <i class="fas fa-ellipsis-v">
+          </i>
+         </button>
+       </div>
+       <p class="text-white mt-1">
+      Update patch telah selesai, Login dan rasakan perbedaanya <span class="text-blue-500">#HonorOfKings_indonesia</span> 
+      </p>
+      <div class="mt-2">
+        <img alt="Advertisement image showing a phone with Taylor Swift playlist" height="400" src="https://i.ytimg.com/vi/6X5-OwafIss/maxresdefault.jpg" width="600"/>
+       </div>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+          <div class="flex space-x-2">
+            <span class="flex space-x-2">
+            5,5rb
+           </span>
+          </div>
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+          <div class="flex space-x-2">
+         <span class="flex space-x-2">
+          2,9rb
+         </span>
+          </div>
+          <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <div class="flex space-x-2">
+         <span class="flex space-x-2">
+          8,7rb
+         </span>
+          </div>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+          2,1rb
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        
+       </div>
+      </div>
+     </div>
+    </article>
+
+  <!-- Floating Action Button -->
+  <button aria-label="New post" class="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-[#1DA1F2] flex items-center justify-center shadow-lg">
+   <i class="fas fa-plus text-white text-3xl">
+   </i>
+  </button>
+ </body>
+</html>

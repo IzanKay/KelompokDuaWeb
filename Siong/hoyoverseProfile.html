@@ -1,0 +1,397 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Profile Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom scrollbar for dark mode */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #374151;
+      border-radius: 3px;
+    }
+    .grey{
+
+    }
+  </style>
+ </head>
+ <body class="bg-black text-gray-300 font-sans">
+  <!-- Top Blue Header -->
+<header class="bg-[#1DA1F2]  flex items-center justify-between px-4 py-3">
+    
+   <button aria-label="Back" class="w-10 h-10 rounded-full bg-[#0d6db8] flex items-center justify-center">
+    <a href="Following.html"><i class="fas fa-arrow-left text-white text-lg">
+    </i>
+</a>
+   </button>
+   <div class="flex space-x-4">
+    <button aria-label="Search" class="w-10 h-10 rounded-full bg-[#0d6db8] flex items-center justify-center">
+     <i class="fas fa-search text-white text-lg">
+     </i>
+    </button>
+    <button aria-label="More options" class="w-10 h-10 rounded-full bg-[#0d6db8] flex items-center justify-center">
+     <i class="fas fa-ellipsis-v text-white text-lg">
+     </i>
+    </button>
+   </div>
+  </header>
+  <main class="px-4 pb-20">
+   <!-- Profile Image and Edit Button -->
+   <div class="relative pt-4 pb-2 flex items-center justify-between">
+     <div class="relative -mt-16">
+     <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-18 h-18 rounded-full border-4 border-black object-cover" height="50" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3z3YZThi82FPT0FHpJgLIYMDos1vXfDWSlIFqlmj-GXKGyoxbFt1VTeHn&s=10 width="50"/>
+    </div>
+    
+    <button class="border border-gray-600 rounded-full px-4 py-2 text-white font-semibold text-sm hover:bg-gray-800" type="button">
+     Mengikuti
+    </button>
+   </div>
+   <!-- Name, Verified, Username -->
+   <div class="mt-1">
+    <h1 class="text-2xl font-extrabold text-gray-200 flex items-center space-x-2">
+     <span>
+      Mihoyo
+     </span>
+     <svg aria-label="Verified badge" class="w-5 h-5 text-[#1DA1F2]" fill="currentColor" role="img" viewbox="0 0 24 24">
+      <g fill="none" fill-rule="evenodd">
+       <circle cx="12" cy="12" fill="yellow" r="12">
+       </circle>
+       <path d="M7 13l3 3 7-7" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+       </path>
+      </g>
+     </svg>
+    </h1>
+    <p class="text-gray-500 text-base mt-0.5">
+     @Hoyoverse
+    </p>
+    <h2>
+<span>
+  オールメディア展開するスクールアイドルプロジェクト、ラブライブ! シリーズの公式アカウン
+
+  トです
+</span>
+<br>
+<span>
+  ■YouTube
+</span>
+<a href=" https://youtube.com/@lovelive_series?si=mx0rV6Zig48DRNJH">
+<span class="text-blue-500">
+  https://youtube.com/@lovelive_series?si=mx0rV6Zig48DRNJH
+</span></a>
+<br>
+<a href=" https://www.tiktok.com/@lovelive_official?_t=ZS-8vvg65jziIp&_r=1">
+<span>
+  ■TikTok
+</span>
+<span class="text-blue-500">
+  https://www.tiktok.com/@lovelive_official?_t=ZS-8vvg65jziIp&_r=1
+</span></a>
+    </h2>
+    <h3>
+      <span class="text-blue-500">
+        terjemahkan Bio
+      </span>
+    </h3>
+   </div>
+   <!-- Birth and Joined info -->
+   <div class="flex items-center space-x-4 mt-3 text-gray-500 text-sm">
+    <div class="flex items-center space-x-1">
+     <i class="far fa-calendar-alt text-gray-500 text-xs">
+     </i>
+     <span>
+      Joined Maret 2010
+     </span>
+    </div>
+   </div>
+   <!-- Following and Followers -->
+   <div class="flex space-x-6 mt-3 text-gray-400 text-sm">
+    <div>
+     <span class="font-extrabold text-gray-200">
+      17
+     </span>
+     Following
+    </div>
+    <div>
+     <span class="font-extrabold text-gray-200">
+      1.126.851
+     </span>
+     Followers
+    </div>
+   </div>
+   <!-- Navigation Tabs -->
+   <nav class="flex justify-around border-b border-gray-700 mt-5 overflow-x-auto scrollbar-hide">
+    <button class="text-white font-extrabold border-b-4 border-[#1DA1F2] pb-2 whitespace-nowrap" type="button">
+     Posts
+    </button>
+    <button class="text-gray-600 font-semibold pb-2 whitespace-nowrap" type="button">
+     Replies
+    </button>
+    <a href="highlightHoyo.html">
+    <button class="text-gray-600 font-semibold pb-2 whitespace-nowrap" type="button">
+     Highlights
+    </button></a>
+    <button class="text-gray-600 font-semibold pb-2 whitespace-nowrap" type="button">
+     Articles
+    </button>
+    <a href="MediaHoyo.html">
+    <button class="text-gray-600 font-semibold pb-2 whitespace-nowrap" type="button">
+     Media
+    </button>
+    </a>
+   </nav>
+   <!-- Posts List -->
+   <section class="mt-3 space-y-4">
+    <!-- Post 1 -->
+     <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" height="48" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3z3YZThi82FPT0FHpJgLIYMDos1vXfDWSlIFqlmj-GXKGyoxbFt1VTeHn&s=10  width="48"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+         Mihoyo
+        </span>
+        <span class="text-gray-400">
+         · 4 hari
+        </span>
+        <button aria-label="More options" class="hover:text-white">
+          <i class="fas fa-ellipsis-v">
+          </i>
+         </button>
+       </div>
+       <p class="text-white mt-1">
+        Mark your calendars for  <span class="text-blue-500">
+#HoYoFEST2025!</span>
+       <br>This year, we're bringing the adventure to life with exciting opportunities for you to get involved!
+       <br>🎨Artist Alley: Showcase your amazing work and connect with fellow Captains in a dedicated space~
+       <br>🎭️Stage Activities: Stand in the limelight via the Open Stage segment, Cosplay Showcase segment, or Fan Art Showcase segment!
+       <br>For registration and further details, please check the registration form pinned in the comment below~
+       
+<span class="text-blue-500">
+        #hoyofest2025
+       </span>
+      </p>
+      <div class="mt-2">
+        <img alt="Advertisement image showing a phone with Taylor Swift playlist" height="400" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6lT6ABlTd7TedgeW_nXI_cyab2kglcOrnfstVWVSJujLVMIVPkbRqqCk&s=10" width="600"/>
+       </div>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+          <div class="flex space-x-2">
+            <span class="flex space-x-2">
+            78rb
+           </span>
+          </div>
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+          <div class="flex space-x-2">
+         <span class="flex space-x-2">
+          20rb
+         </span>
+          </div>
+          <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <div class="flex space-x-2">
+         <span class="flex space-x-2">
+          150rb
+         </span>
+          </div>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+          45rb
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        
+       </div>
+      </div>
+     </div>
+    </article>
+   
+    <!-- Post 3[s -->
+    <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" height="200px" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3z3YZThi82FPT0FHpJgLIYMDos1vXfDWSlIFqlmj-GXKGyoxbFt1VTeHn&s=10  width="400px"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+          Mihoyo
+        </span>
+        <span class="text-gray-400">
+         · 5 Februari
+        </span>
+        <button aria-label="More options" class="hover:text-white">
+          <i class="fas fa-ellipsis-v">
+          </i>
+         </button>
+       </div>
+       <p class="text-white mt-1">
+        The <span class="text-blue-500">
+ #HoYoCREATORS </span>Retweet event has concluded and here comes the winners announcement!   <br>
+We will contact winners via message. Please make sure you allow message requests from HoYoCREATORS!
+
+Winners of Zenless Zone Zero Tuning Series: Pillow - Bangboo -<span class="text-blue-500">
+ @Farik_Saga @peeblesplays @   </span>‌
+          </p>
+      <div class="mt-2">
+      <video controls height="400" width="600">
+  <source src="hoyovideos.mp4">
+</video>
+       
+</div>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+          <div class="flex space-x-2">
+            <span class="flex space-x-2">
+            3.9k
+           </span>
+          </div>
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+          <div class="flex space-x-2">
+         <span class="flex space-x-2">
+          78rb
+         </span>
+          </div>
+          <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <div class="flex space-x-2">
+         <span class="flex space-x-2">
+          10rb
+         </span>
+          </div>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+         150rb
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        
+       </div>
+      </div>
+     </div>
+    </article>
+  
+  <!-- Post 1 -->
+     <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" height="48" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3z3YZThi82FPT0FHpJgLIYMDos1vXfDWSlIFqlmj-GXKGyoxbFt1VTeHn&s=10  width="48"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+         Mihoyo
+        </span>
+        <span class="text-gray-400">
+         · 1 January
+        </span>
+        <button aria-label="More options" class="hover:text-white">
+          <i class="fas fa-ellipsis-v">
+          </i>
+         </button>
+       </div>
+       <p class="text-white mt-1">
+10월 31(목) ~ 11월 3일(일)
+‌<br]
+다양한 호요버스의 세계들이 한자리에 모이는 호요랜드에 호요크리에이터를 위한 공간이 생겼습니다. 🔥🔥🔥
+‌<br>
+호요크리에이터라면 누구나 방문해서 기념품도 받아가고 방명록도 남겨봐요.🫵🫵
+‌<br>
+⏳️오픈시간 : 10AM ~ 7PM
+<span class="text-blue-500">
+   #hoyocreators #호요랜드
+       </span>
+      </p>
+      <div class="mt-2">
+        <img alt="Advertisement image showing a phone with Taylor Swift playlist" height="400" src="https://pbs.twimg.com/media/GbIfKqObcAAufUs?format=jpg&name=medium" width="600"/>
+       </div>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+          <div class="flex space-x-2">
+            <span class="flex space-x-2">
+            78rb
+           </span>
+          </div>
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+          <div class="flex space-x-2">
+         <span class="flex space-x-2">
+          20rb
+         </span>
+          </div>
+          <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <div class="flex space-x-2">
+         <span class="flex space-x-2">
+          150rb
+         </span>
+          </div>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+          45rb
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        
+       </div>
+      </div>
+     </div>
+    </article>
+  
+  <!-- Floating Action Button -->
+  <button aria-label="New post" class="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-[#1DA1F2] flex items-center justify-center shadow-lg">
+   <i class="fas fa-plus text-white text-3xl">
+   </i>
+  </button>
+ </body>
+</html>

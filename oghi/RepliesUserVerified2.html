@@ -1,0 +1,278 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Profile Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom scrollbar for dark mode */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #374151;
+      border-radius: 3px;
+    }
+  </style>
+ </head>
+ <body class="bg-black text-gray-300 font-sans">
+  <!-- Top Blue Header -->
+  <header class="bg-[#1DA1F2] flex items-center justify-between px-4 py-3">
+   <button aria-label="Back" class="w-10 h-10 rounded-full bg-[#0d6db8] flex items-center justify-center">
+   <a href="notificationVerified.html"> <i class="fas fa-arrow-left text-white text-lg">
+    </i></a>
+   </button>
+   <div class="flex space-x-4">
+    <button aria-label="Toggle something" class="w-10 h-10 rounded-full bg-[#0d6db8] flex items-center justify-center">
+     <i class="fas fa-ban text-white text-lg">
+     </i>
+    </button>
+    <button aria-label="Search" class="w-10 h-10 rounded-full bg-[#0d6db8] flex items-center justify-center">
+     <i class="fas fa-search text-white text-lg">
+     </i>
+    </button>
+    <button aria-label="More options" class="w-10 h-10 rounded-full bg-[#0d6db8] flex items-center justify-center">
+     <i class="fas fa-ellipsis-v text-white text-lg">
+     </i>
+    </button>
+   </div>
+  </header>
+  <main class="px-4 pb-20">
+   <!-- Profile Image and Edit Button -->
+   <div class="relative pt-4 pb-2 flex items-center justify-between">
+     <img alt="Profile image of messi" class="w-18 h-18 rounded-full border-4 border-black object-cover" height="50" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTxtmN-uIiii60AXn9UkrKXGbYhIxBxJyl1f9UwEHmdeBBGUv0QspPqpY-ofvx6b_cSoCONoQahXEp4OvI" width="48" width="50"/>
+    </div>
+   </div>
+   <!-- Name, Verified, Username -->
+   <div class="mt-1">
+    <h1 class="text-2xl font-extrabold text-gray-200 flex items-center space-x-2">
+     <span>
+     Naufaldaagoat
+     </span>
+     <svg aria-label="Verified badge" class="w-5 h-5 text-[#1DA1F2]" fill="currentColor" role="img" viewbox="0 0 24 24">
+      <g fill="none" fill-rule="evenodd">
+       <circle cx="12" cy="12" fill="#1DA1F2" r="12">
+       </circle>
+       <path d="M7 13l3 3 7-7" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+       </path>
+      </g>
+     </svg>
+     <span class="text-[#1DA1F2] font-semibold">
+     </span>
+    </h1>
+    <p class="text-gray-500 text-base mt-0.5">
+        @Iueop
+    </p>
+   </div>
+    <!-- Birth and Joined info -->
+   <div class="flex items-center space-x-4 mt-3 text-gray-500 text-sm">
+    <div class="flex items-center space-x-1">
+     <i class="fas fa-map-marker-alt text-gray-500 text-xs">
+     </i>
+     <span>
+      Born January 5,2004
+     </span>
+    </div>
+    <div class="flex items-center space-x-1">
+     <i class="far fa-calendar-alt text-gray-500 text-xs">
+     </i>
+     <span>
+      Joined July 2020
+     </span>
+    </div>
+   </div>
+   <!-- Following and Followers -->
+   <div class="flex space-x-6 mt-3 text-gray-400 text-sm">
+    <div>
+     <span class="font-extrabold text-gray-200">
+      59
+     </span>
+     Following
+    </div>
+    <div>
+     <span class="font-extrabold text-gray-200">
+      70K
+     </span>
+     Followers
+    </div>
+   </div>
+   <!-- Navigation Tabs -->
+    <nav class="flex space-x-6 border-b border-gray-700 mt-5 justify-around scrollbar-hide">
+    <a href="Profle+PostUserVerified2.html">
+    <button class="text-gray-600 font-semibold pb-2 whitespace-nowrap flex-1 text-center" type="button">
+     Posts
+    </button></a>
+   <a href="RepliesUserVerified2.html"> <button class="text-white font-extrabold border-b-4 border-[#1DA1F2] pb-2 whitespace-nowrap flex-1 text-center" type="button">
+     Replies
+    </button></a>
+    <a href="MediaUserVerified2.html">
+    <button class="text-gray-600 font-semibold pb-2 whitespace-nowrap flex-1 text-center" type="button">
+     Media
+    </button></a>
+   </nav>
+   <!--  Replies List -->
+     <section class="mt-3 space-y-4">
+      <!-- Replies 1 -->
+      <div class="p-4 border-b border-gray-700">
+    <div class="flex items-start space-x-3">
+      <a href="Profle+PostUserVerified1.html">
+     <img alt="Profile picture of Profile 1" class="rounded-full" height="48" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTxtmN-uIiii60AXn9UkrKXGbYhIxBxJyl1f9UwEHmdeBBGUv0QspPqpY-ofvx6b_cSoCONoQahXEp4OvI"width="48"/>
+     </a>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        </div>
+        <div class="flex-1 text-gray-300">
+         <div class="flex items-center space-x-1 text-white font-bold text-base">
+          <span>
+           naufaldaagoat
+          </span>
+          <i class="fas fa-check-circle text-blue-500">
+           </i>
+          <span class="font-normal text-gray-500">
+           @Iueop
+          </span>
+          <span>
+           · 10m
+          </span>
+         </div>
+         <p class="font-bold">
+         Replying to
+          <a class="text-blue-500" href="UserProfilePagePosts.html">
+           @berdoaZalr66047
+          </a>
+          setuju lah kalo semisal gitu bro
+         </p>
+         <div class="flex items-center space-x-6 mt-2 text-gray-500 text-xs">
+          <button aria-label="Reply" class="hover:text-white">
+           <i class="far fa-comment">
+           </i>
+          </button>
+          <button aria-label="Retweet" class="hover:text-white">
+           <i class="fas fa-retweet">
+           </i>
+          </button>
+          <button aria-label="Like" class="hover:text-white">
+           <i class="far fa-heart">
+           </i>
+          </button>
+          <span class="text-xs">
+           104
+          </span>
+          <button aria-label="Bookmark" class="hover:text-white">
+           <i class="far fa-bookmark">
+           </i>
+          </button>
+          <button aria-label="Share" class="hover:text-white">
+           <i class="fas fa-share-alt">
+           </i>
+          </button>
+         </div>
+        </div>
+       </article>
+      <!-- Embedded Tweet -->
+       <div class="p-3">
+      </div>
+     </div>
+    </div>
+   </div>
+      <!-- Replies 2 -->
+      <div class="p-4 border-b border-gray-700">
+    <div class="flex items-start space-x-3">
+      <a href="Profle+PostUserVerified1.html">
+     <img alt="Profile picture of Profile 1" class="rounded-full" height="48" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTxtmN-uIiii60AXn9UkrKXGbYhIxBxJyl1f9UwEHmdeBBGUv0QspPqpY-ofvx6b_cSoCONoQahXEp4OvI" width="48"/>
+     </a>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        </div>
+        <div class="flex-1 text-gray-300">
+         <div class="flex items-center space-x-1 text-white font-bold text-base">
+          <span>
+           naufaldaagoat
+          </span>
+          <i class="fas fa-check-circle text-blue-500">
+           </i>
+          <span class="font-normal text-gray-500">
+           @Iueop
+          </span>
+          <span>
+           · 10m
+          </span>
+         </div>
+         <p class="font-bold">
+         Replying to
+          <a class="text-blue-500" href="Profle+PostUserVerified1.html">
+           @ghuakennnn
+          </a>
+          apalah woyyy
+         </p>
+         <div class="flex items-center space-x-6 mt-2 text-gray-500 text-xs">
+          <button aria-label="Reply" class="hover:text-white">
+           <i class="far fa-comment">
+           </i>
+          </button>
+          <button aria-label="Retweet" class="hover:text-white">
+           <i class="fas fa-retweet">
+           </i>
+          </button>
+          <button aria-label="Like" class="hover:text-white">
+           <i class="far fa-heart">
+           </i>
+          </button>
+          <span class="text-xs">
+           104
+          </span>
+          <button aria-label="Bookmark" class="hover:text-white">
+           <i class="far fa-bookmark">
+           </i>
+          </button>
+          <button aria-label="Share" class="hover:text-white">
+           <i class="fas fa-share-alt">
+           </i>
+          </button>
+         </div>
+        </div>
+       </article>
+      <!-- Embedded Tweet -->
+       <div class="p-3">
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- Bottom Navigation -->
+    <div class="fixed bottom-0 left-0 right-0 bg-black border-t border-gray-700">
+      <div class="flex justify-around py-2">
+       <i class="fas fa-home text-white text-xl text-blue-500 border-b-2 border-blue-500">
+       </i>
+       <a href="usn pencarian.html">
+       <i class="fas fa-search text-xl"> 
+       </i>
+      </a>
+       <a href="../Siong/notificationAll.html">
+       <i class="fas fa-bell text-white text-xl relative">
+        <span class="absolute top-0 right-0 bg-blue-500 text-xs rounded-full px-1">
+         3
+        </span>
+       </i>
+      </a>
+      <a href="../rijal/mail.html">
+       <i class="fas fa-envelope text-white text-xl">
+       </i>
+      </a>
+       <span>
+        <a href="../Firman/komuv2.html">
+        <i class="fas fa-users text-white"></i>
+        </a>
+       </span>
+       
+  <!-- Floating Action Button -->
+  <button aria-label="New post" class="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-[#1DA1F2] flex items-center justify-center shadow-lg">
+   <i class="fas fa-plus text-white text-3xl">
+   </i>
+  </button>
+ </body>
+</html>

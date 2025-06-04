@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Info percakapan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+     input[type="checkbox"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 2.5rem;
+      height: 1.25rem;
+      background-color: #374151; /* Tailwind slate-700 */
+      border-radius: 9999px;
+      position: relative;
+      cursor: pointer;
+      outline: none;
+      transition: background-color 0.2s ease-in-out;
+    }
+    input[type="checkbox"]:checked {
+      background-color: #3b82f6; /* Tailwind blue-500 */
+    }
+    input[type="checkbox"]::before {
+      content: "";
+      position: absolute;
+      top: 0.125rem;
+      left: 0.125rem;
+      width: 1rem;
+      height: 1rem;
+      background-color: white;
+      border-radius: 9999px;
+      transition: transform 0.2s ease-in-out;
+      box-shadow: 0 1px 2px rgb(0 0 0 / 0.2);
+    }
+    input[type="checkbox"]:checked::before {
+      transform: translateX(1.25rem);
+    }
+  </style>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col">
+  <!-- Main content -->
+  <div class="px-4 flex flex-col space-y-4">
+    <!-- Back arrow and title -->
+    <div class="flex items-center space-x-3 text-white font-bold text-lg">
+        <a href="massage5.html">
+      <i class="fas fa-arrow-left">
+      </i>
+    </a>
+      <span>Info percakapan</span>
+    </div>
+
+    <!-- User info -->
+    <div class="flex items-center space-x-4">
+      <div class="flex items-center justify-center rounded-full bg-purple-700 w-12 h-12 text-white font-bold text-xl">O</div>
+      <div class="flex flex-col">
+        <div class="flex items-center space-x-2 font-bold text-white text-base">
+          <span>ogik tzy</span>
+          <button class="border border-white rounded-full px-4 py-1 text-white text-sm font-semibold">Mengikuti</button>
+        </div>
+        <div class="flex items-center space-x-2 text-gray-500 text-sm">
+          <span>@Lyerok</span>
+          <div class="bg-gray-700 rounded px-2 py-0.5 text-xs font-semibold">Mengikuti Anda</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-gray-700" />
+
+    <!-- Notification section -->
+    <div>
+      <h2 class="font-extrabold text-white text-xl mb-2">Pemberitahuan</h2>
+      <div class="flex justify-between items-center text-white text-base">
+        <span>Tunda notifikasi dari Roklye</span>
+          <input aria-label="Toggle notification 2" checked="" type="checkbox"/>
+       
+        </label>
+      </div>
+    </div>
+
+    <hr class="border-gray-700" />
+
+    <!-- Action links -->
+    <div class="flex flex-col space-y-6 text-center mt-6">
+      <button class="text-blue-600 text-base font-normal">Blokir DM</button>
+      <button class="text-blue-600 text-base font-normal">Blokir semuanya</button>
+      <button class="text-blue-600 text-base font-normal">Laporan</button>
+      <button class="text-red-600 text-base font-normal">Tinggalkan percakapan</button>
+    </div>
+  </div>
+</body>
+</html>
