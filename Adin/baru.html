@@ -1,0 +1,666 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Profile Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom scrollbar for dark mode */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #374151;
+      border-radius: 3px;
+    }
+  </style>
+ </head>
+ <body class="bg-black text-gray-300 font-sans">
+  <!-- Top Blue Header -->
+  <header class="bg-[#1DA1F2] flex items-center justify-between px-4 py-3">
+   <button aria-label="Back" class="w-10 h-10 rounded-full bg-[#0d6db8] flex items-center justify-center">
+    <i class="fas fa-arrow-left text-white text-lg">
+    </i>
+   </button>
+   <div class="flex space-x-4">
+    <button aria-label="Toggle something" class="w-10 h-10 rounded-full bg-[#0d6db8] flex items-center justify-center">
+     <i class="fas fa-ban text-white text-lg">
+     </i>
+    </button>
+    <button aria-label="Search" class="w-10 h-10 rounded-full bg-[#0d6db8] flex items-center justify-center">
+     <i class="fas fa-search text-white text-lg">
+     </i>
+    </button>
+    <button aria-label="More options" class="w-10 h-10 rounded-full bg-[#0d6db8] flex items-center justify-center">
+     <i class="fas fa-ellipsis-v text-white text-lg">
+     </i>
+    </button>
+   </div>
+  </header>
+  <main class="px-4 pb-20">
+   <!-- Profile Image and Edit Button -->
+   <div class="relative pt-4 pb-2 flex items-center justify-between">
+    <div class="relative -mt-16">
+     <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-18 h-18 rounded-full border-4 border-black object-cover" height="50" src=https://upload.wikimedia.org/wikipedia/commons/8/80/Elton_John_2011_Shankbone_2_(cropped).JPG width="50"/>
+    </div>
+    <button class="border border-gray-600 rounded-full px-4 py-2 text-white font-semibold text-sm hover:bg-gray-800" type="button">
+     Edit profile
+    </button>
+   </div>
+   <!-- Name, Verified, Username -->
+   <div class="mt-1">
+    <h1 class="text-2xl font-extrabold text-gray-200 flex items-center space-x-2">
+     <span>
+      KevinDeLuna
+     </span>
+     <svg aria-label="Verified badge" class="w-5 h-5 text-[#1DA1F2]" fill="currentColor" role="img" viewbox="0 0 24 24">
+      <g fill="none" fill-rule="evenodd">
+       <circle cx="12" cy="12" fill="#1DA1F2" r="12">
+       </circle>
+       <path d="M7 13l3 3 7-7" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+       </path>
+      </g>
+     </svg>
+     <span class="text-[#1DA1F2] font-semibold">
+      Get Verified
+     </span>
+    </h1>
+    <p class="text-gray-500 text-base mt-0.5">
+     @Ogiekinz
+    </p>
+   </div>
+   <!-- Birth and Joined info -->
+   <div class="flex items-center space-x-4 mt-3 text-gray-500 text-sm">
+    <div class="flex items-center space-x-1">
+     <i class="fas fa-map-marker-alt text-gray-500 text-xs">
+     </i>
+     <span>
+      Born June 21, 2004
+     </span>
+    </div>
+    <div class="flex items-center space-x-1">
+     <i class="far fa-calendar-alt text-gray-500 text-xs">
+     </i>
+     <span>
+      Joined July 2024
+     </span>
+    </div>
+   </div>
+   <!-- Following and Followers -->
+   <div class="flex space-x-6 mt-3 text-gray-400 text-sm">
+    <div>
+     <span class="font-extrabold text-gray-200">
+      16
+     </span>
+     Following
+    </div>
+    <div>
+     <span class="font-extrabold text-gray-200">
+      9
+     </span>
+     Followers
+    </div>
+   </div>
+   <!-- Navigation Tabs -->
+   <nav class="flex space-x-6 border-b border-gray-700 mt-5 overflow-x-auto scrollbar-hide">
+    <button class="text-white font-extrabold border-b-4 border-[#1DA1F2] pb-2 whitespace-nowrap" type="button">
+     Posts
+    </button>
+    <button class="text-gray-600 font-semibold pb-2 whitespace-nowrap" type="button">
+     Replies
+    </button>
+    <button class="text-gray-600 font-semibold pb-2 whitespace-nowrap" type="button">
+     Highlights
+    </button>
+    <button class="text-gray-600 font-semibold pb-2 whitespace-nowrap" type="button">
+     Articles
+    </button>
+    <button class="text-gray-600 font-semibold pb-2 whitespace-nowrap" type="button">
+     Media
+    </button>
+   </nav>
+   <!-- Posts List -->
+   <section class="mt-3 space-y-4">
+    <!-- Post 1 -->
+    <article class="flex flex-col space-y-2">
+     <header class="flex items-center space-x-2 text-gray-500 text-sm font-semibold">
+      <i class="fas fa-users">
+      </i>
+      <span>
+       Mobile Legends: Bang Bang ID
+      </span>
+     </header>
+     <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" height="48" src=https://upload.wikimedia.org/wikipedia/commons/8/80/Elton_John_2011_Shankbone_2_(cropped).JPG width="48"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+            KevinDeLuna
+        </span>
+        <span class="text-gray-400">
+         @IlloIdlckdwn
+        </span>
+        <span class="text-gray-400">
+         · 17 Mar
+        </span>
+       </div>
+       <p class="text-white mt-1">
+        Jangan biarkan tugasmu mengganggu waktu push rankmu, ingat tugas sementara highest rank immortal selamanya
+       </p>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+         <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+          212
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        <button aria-label="Toggle visibility" class="hover:text-white">
+         <i class="fas fa-ban">
+         </i>
+        </button>
+        <button aria-label="More options" class="hover:text-white">
+         <i class="fas fa-ellipsis-v">
+         </i>
+        </button>
+       </div>
+      </div>
+     </div>
+    </article>
+    <!-- Post 2 -->
+    <article class="flex flex-col space-y-2">
+     <header class="flex items-center space-x-2 text-gray-500 text-sm font-semibold">
+      <i class="fas fa-users">
+      </i>
+      <span>
+       Komunitas mancing hemat mania
+      </span>
+     </header>
+     <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" height="48" src=  https://upload.wikimedia.org/wikipedia/commons/8/80/Elton_John_2011_Shankbone_2_(cropped).JPG width="48"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+            KevinDeLuna
+        </span>
+        <span class="text-gray-400">
+            @IlloIdlckdwn
+        </span>
+        <span class="text-gray-400">
+         · 17 Mar
+        </span>
+       </div>
+       <p class="text-white mt-1">
+        rek rekomendasi pelet yg muarh di daerah surabaya dong, sekalian kalo bisa meelet mertua HAHAHAHA
+       </p>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+         <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+          196
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        <button aria-label="Toggle visibility" class="hover:text-white">
+         <i class="fas fa-ban">
+         </i>
+        </button>
+        <button aria-label="More options" class="hover:text-white">
+         <i class="fas fa-ellipsis-v">
+         </i>
+        </button>
+       </div>
+      </div>
+     </div>
+    </article>
+    <!-- Post 3 -->
+    <article class="flex flex-col space-y-2">
+     <header class="flex items-center space-x-2 text-gray-500 text-sm font-semibold">
+      <i class="fas fa-users">
+      </i>
+      <span>
+       INFO MAGANG SURABAYA
+      </span>
+     </header>
+     <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" height="48" src=https://upload.wikimedia.org/wikipedia/commons/8/80/Elton_John_2011_Shankbone_2_(cropped).JPG width="48"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+            KevinDeLuna
+        </span>
+        <span class="text-gray-400">
+            @IlloIdlckdwn
+        </span>
+        <span class="text-gray-400">
+         · 17 Mar
+        </span>
+       </div>
+       <p class="text-white mt-1">
+        info magang daerah surabaya dan sekitarnya untuk anak smk bossqq
+       </p>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+         <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+          210
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        <button aria-label="Toggle visibility" class="hover:text-white">
+         <i class="fas fa-ban">
+         </i>
+        </button>
+        <button aria-label="More options" class="hover:text-white">
+         <i class="fas fa-ellipsis-v">
+         </i>
+        </button>
+       </div>
+      </div>
+     </div>
+    </article>
+    <!-- Post 4 -->
+    <article class="flex flex-col space-y-2">
+     <header class="flex items-center space-x-2 text-gray-500 text-sm font-semibold">
+      <i class="fas fa-users">
+      </i>
+      <span>
+       KOMUNITAS SUNGUT LELE NGAWI RAYA
+      </span>
+     </header>
+     <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" height="48" src=https://upload.wikimedia.org/wikipedia/commons/8/80/Elton_John_2011_Shankbone_2_(cropped).JPG width="48"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+            KevinDeLuna
+        </span>
+        <span class="text-gray-400">
+            @IlloIdlckdwn
+        </span>
+        <span class="text-gray-400">
+         · 17 Mar
+        </span>
+       </div>
+       <p class="text-white mt-1">
+        infokan doksli anggrek mekar pontianak 4K ULTRA HD
+       </p>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+         <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+          233
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        <button aria-label="Toggle visibility" class="hover:text-white">
+         <i class="fas fa-ban">
+         </i>
+        </button>
+        <button aria-label="More options" class="hover:text-white">
+         <i class="fas fa-ellipsis-v">
+         </i>
+        </button>
+       </div>
+      </div>
+     </div>
+      <!-- Posts List -->
+   <section class="mt-3 space-y-4">
+    <!-- Post 5 -->
+    <article class="flex flex-col space-y-2">
+     <header class="flex items-center space-x-2 text-gray-500 text-sm font-semibold">
+      <i class="fas fa-users">
+      </i>
+      <span>
+       Mobile Legends: Bang Bang ID
+      </span>
+     </header>
+     <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" height="48" src=https://upload.wikimedia.org/wikipedia/commons/8/80/Elton_John_2011_Shankbone_2_(cropped).JPG width="48"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+            KevinDeLuna
+        </span>
+        <span class="text-gray-400">
+         @IlloIdlckdwn
+        </span>
+        <span class="text-gray-400">
+         · 17 Mar
+        </span>
+       </div>
+       <p class="text-white mt-1">
+        Jangan biarkan tugasmu mengganggu waktu push rankmu, ingat tugas sementara highest rank immortal selamanya
+       </p>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+         <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+          212
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        <button aria-label="Toggle visibility" class="hover:text-white">
+         <i class="fas fa-ban">
+         </i>
+        </button>
+        <button aria-label="More options" class="hover:text-white">
+         <i class="fas fa-ellipsis-v">
+         </i>
+        </button>
+       </div>
+      </div>
+     </div>
+    </article>
+    <!-- Post 6 -->
+    <article class="flex flex-col space-y-2">
+     <header class="flex items-center space-x-2 text-gray-500 text-sm font-semibold">
+      <i class="fas fa-users">
+      </i>
+      <span>
+       Komunitas mancing hemat mania
+      </span>
+     </header>
+     <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" height="48" src=  https://upload.wikimedia.org/wikipedia/commons/8/80/Elton_John_2011_Shankbone_2_(cropped).JPG width="48"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+            KevinDeLuna
+        </span>
+        <span class="text-gray-400">
+            @IlloIdlckdwn
+        </span>
+        <span class="text-gray-400">
+         · 17 Mar
+        </span>
+       </div>
+       <p class="text-white mt-1">
+        rek rekomendasi pelet yg muarh di daerah surabaya dong, sekalian kalo bisa meelet mertua HAHAHAHA
+       </p>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+         <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+          196
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        <button aria-label="Toggle visibility" class="hover:text-white">
+         <i class="fas fa-ban">
+         </i>
+        </button>
+        <button aria-label="More options" class="hover:text-white">
+         <i class="fas fa-ellipsis-v">
+         </i>
+        </button>
+       </div>
+      </div>
+     </div>
+    </article>
+    <!-- Post 7 -->
+    <article class="flex flex-col space-y-2">
+     <header class="flex items-center space-x-2 text-gray-500 text-sm font-semibold">
+      <i class="fas fa-users">
+      </i>
+      <span>
+       INFO MAGANG SURABAYA
+      </span>
+     </header>
+     <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" height="48" src=https://upload.wikimedia.org/wikipedia/commons/8/80/Elton_John_2011_Shankbone_2_(cropped).JPG width="48"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+            KevinDeLuna
+        </span>
+        <span class="text-gray-400">
+            @IlloIdlckdwn
+        </span>
+        <span class="text-gray-400">
+         · 17 Mar
+        </span>
+       </div>
+       <p class="text-white mt-1">
+        info magang daerah surabaya dan sekitarnya untuk anak smk bossqq
+       </p>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+         <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+          210
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        <button aria-label="Toggle visibility" class="hover:text-white">
+         <i class="fas fa-ban">
+         </i>
+        </button>
+        <button aria-label="More options" class="hover:text-white">
+         <i class="fas fa-ellipsis-v">
+         </i>
+        </button>
+       </div>
+      </div>
+     </div>
+    </article>
+    <!-- Post 8 -->
+    <article class="flex flex-col space-y-2">
+     <header class="flex items-center space-x-2 text-gray-500 text-sm font-semibold">
+      <i class="fas fa-users">
+      </i>
+      <span>
+       KOMUNITAS SUNGUT LELE NGAWI RAYA
+      </span>
+     </header>
+     <div class="flex space-x-3">
+      <img alt="Profile image of a man with short black hair wearing a red and black shirt" class="w-12 h-12 rounded-full object-cover flex-shrink-0" height="48" src=https://upload.wikimedia.org/wikipedia/commons/8/80/Elton_John_2011_Shankbone_2_(cropped).JPG width="48"/>
+      <div class="flex-1">
+       <div class="flex items-center space-x-1">
+        <span class="font-extrabold text-white">
+            KevinDeLuna
+        </span>
+        <span class="text-gray-400">
+            @IlloIdlckdwn
+        </span>
+        <span class="text-gray-400">
+         · 17 Mar
+        </span>
+       </div>
+       <p class="text-white mt-1">
+        infokan doksli anggrek mekar pontianak 4K ULTRA HD
+       </p>
+       <div class="flex items-center justify-between text-gray-500 text-xs mt-2">
+        <div class="flex space-x-6">
+         <button aria-label="Reply" class="hover:text-white">
+          <i class="far fa-comment">
+          </i>
+         </button>
+         <button aria-label="Retweet" class="hover:text-white">
+          <i class="fas fa-retweet">
+          </i>
+         </button>
+         <button aria-label="Like" class="hover:text-white">
+          <i class="far fa-heart">
+          </i>
+         </button>
+        </div>
+        <div class="flex items-center space-x-2">
+         <span>
+          233
+         </span>
+         <button aria-label="Bookmark" class="hover:text-white">
+          <i class="far fa-bookmark">
+          </i>
+         </button>
+         <button aria-label="Share" class="hover:text-white">
+          <i class="fas fa-share-alt">
+          </i>
+         </button>
+        </div>
+        <button aria-label="Toggle visibility" class="hover:text-white">
+         <i class="fas fa-ban">
+         </i>
+        </button>
+        <button aria-label="More options" class="hover:text-white">
+         <i class="fas fa-ellipsis-v">
+         </i>
+        </button>
+       </div>
+      </div>
+     </div>
+    </article>
+   </section>
+  </main>
+  <!-- Floating Action Button -->
+  <button aria-label="New post" class="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-[#1DA1F2] flex items-center justify-center shadow-lg">
+   <i class="fas fa-plus text-white text-3xl">
+   </i>
+  </button>
+ </body>
+</html>

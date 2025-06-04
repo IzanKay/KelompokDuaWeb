@@ -1,0 +1,173 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Search UI
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom scrollbar for dark mode */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #4b5563;
+      border-radius: 3px;
+    }
+  </style>
+ </head>
+ <body class="bg-black text-white font-sans relative min-h-screen flex flex-col">
+  <!-- Search bar and settings -->
+  <div class="flex items-center justify-between mx-4 mb-4">
+   <button aria-label="Back" class="text-white text-2xl flex-shrink-0">
+    <a href="homepage.html"> <i class="fas fa-arrow-left">
+    </i>
+    </a>
+   </button>
+   <div class="flex-grow max-w-[calc(100%-96px)]">
+    <div class="flex items-center border-2 border-blue-500 rounded-full px-4 py-2 text-white text-base max-w-full">
+     <i class="fas fa-search text-gray-400 mr-2 flex-shrink-0">
+     </i>
+     <input aria-label="Search input" class="bg-transparent focus:outline-none flex-grow text-white placeholder-white text-base font-normal" type="text" value=""/>
+     <button aria-label="Clear search" class="ml-2 flex-shrink-0">
+      <i class="fas fa-times-circle text-white text-lg">
+      </i>
+     </button>
+    </div>
+   </div>
+   <button aria-label="Settings" class="text-white text-xl flex-shrink-0 ml-4">
+    <i class="fas fa-cog">
+    </i>
+   </button>
+  </div>
+  <!-- Search suggestions -->
+  <div class="flex flex-col space-y-6 mx-4 mb-6">
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-search text-white text-3xl flex-shrink-0">
+    </i>
+    <span class="text-white text-lg font-normal">
+     zani
+    </span>
+   </div>
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-search text-white text-3xl flex-shrink-0">
+    </i>
+    <span class="text-white text-lg font-normal">
+      Za
+     <span class="font-semibold">
+      yne
+     </span>
+    </span>
+   </div>
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-search text-white text-3xl flex-shrink-0">
+    </i>
+    <span class="text-white text-lg font-normal">
+     za
+     <span class="font-semibold">
+      yyan
+     </span>
+    </span>
+   </div>
+  </div>
+  <hr class="border-gray-700 mx-4"/>
+  <!-- User results -->
+  <div class="flex flex-col space-y-6 mx-4 mt-6 mb-20 overflow-y-auto">
+   <!-- Zalri Prayit -->
+    <div class="flex space-x-4 items-center">
+    <img alt="Profile picture of a flower with dark background" class="rounded-full w-12 h-12 flex-shrink-0" height="48" src="https://tse1.mm.bing.net/th?id=OIP.NpD3BPpy45VbitIMd0fUfwHaHa&pid=Api&P=0&h=180" width="48"/>
+    <div class="flex flex-col">
+     <span class="font-bold text-white text-base leading-tight flex items-center space-x-1">
+      <span>
+      
+     <span class="font-bold text-white text-base leading-tight">
+      <a href="profil akun.html"> Zalri Prayit</a>
+     </span>
+     <span class="text-gray-500 text-sm">
+      @PrayitZalr66047
+     </span>
+     <span class="text-gray-500 text-sm flex items-center space-x-1">
+      <i class="fas fa-user text-gray-500">
+      </i>
+      <span>
+       Mengikuti
+      </span>
+     </span>
+    </div>
+   </div>
+   <!-- tungtung -->
+   <div class="flex space-x-4 items-center">
+    <img alt="Profile picture of a flower with dark background" class="rounded-full w-12 h-12 flex-shrink-0" height="48" src="https://i.ytimg.com/vi/GdyA9mhW_mQ/maxres2.jpg?sqp=-oaymwEoCIAKENAF8quKqQMcGADwAQH4Ac4FgAKwCIoCDAgAEAEYciBZKDIwDw==&rs=AOn4CLDd1DJxrXCxQ-U9JYG5PmWdfwx-KQ" width="48"/>
+    <div class="flex flex-col">
+     <span class="font-bold text-white text-base leading-tight flex items-center space-x-1">
+      <span>
+        <a href="../Putra/Profil akun 2.html">tungtung</a>
+      </span>
+      <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M22.25 12c0-5.65-4.6-10.25-10.25-10.25S1.75 6.35 1.75 12 6.35 22.25 12 22.25 22.25 17.65 22.25 12zM10.5 16.5l-4.5-4.5 1.5-1.5 3 3 6-6 1.5 1.5-7.5 7.5z">
+       </path>
+      </svg>
+     </span>
+     <span class="text-gray-500 text-sm">
+      @tungtung_tweet
+     </span>
+    </div>
+   </div>
+   <!-- bumm -->
+   <div class="flex space-x-4 items-center">
+    <img alt="Profile picture of pixel art blonde avatar with green eyes" class="rounded-full w-12 h-12 flex-shrink-0" height="48" src="https://pixnio.com/free-images/2017/05/10/2017-05-10-18-47-09.jpg" width="48"/>
+    <div class="flex flex-col">
+     <span class="font-bold text-white text-base leading-tight">
+      <a href="../Putra/profil akun 3.html">Bumm
+     </span>
+    </a>
+     <span class="text-gray-500 text-sm">
+      @bumm_tweet
+     </span>
+    </div>
+   </div>
+   <!-- crazy... -->
+   <div class="flex space-x-4 items-center">
+    <img alt="Profile picture of a man wearing a cap and glasses" class="rounded-full w-12 h-12 flex-shrink-0" height="48" src="https://2.bp.blogspot.com/-BnJqpo8DJHk/UOmf9elav-I/AAAAAAAAML8/8fJWdAXZ9Nk/s1600/Portugal-vs-Turkey-cristiano-ronaldo-1499617-1076-1372.jpg" width="48"/>
+    <div class="flex flex-col">
+     <span class="font-bold text-white text-base leading-tight flex items-center space-x-1">
+      <span>
+        <a href="../Putra/profil akun 4.html">crazy...
+      </span>
+    </a>
+      <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M22.25 12c0-5.65-4.6-10.25-10.25-10.25S1.75 6.35 1.75 12 6.35 22.25 12 22.25 22.25 17.65 22.25 12zM10.5 16.5l-4.5-4.5 1.5-1.5 3 3 6-6 1.5 1.5-7.5 7.5z">
+       </path>
+      </svg>
+     </span>
+     <span class="text-gray-500 text-sm">
+      @crazy_t...
+     </span>
+    </div>
+   </div>
+   <!-- Splaja... -->
+   <div class="flex space-x-4 items-center">
+    <img alt="Profile picture of cartoon man with glasses and orange hoodie" class="rounded-full w-12 h-12 flex-shrink-0" height="48" src="https://storage.googleapis.com/a1aa/image/1cdba516-b9a2-43dd-604d-f34f709c5468.jpg" width="48"/>
+    <div class="flex flex-col">
+     <span class="font-bold text-white text-base leading-tight flex items-center space-x-1">
+      <span>
+        <a href="../Putra/profil akun 5.html">Splaja...
+      </span>
+    </a>
+      <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M22.25 12c0-5.65-4.6-10.25-10.25-10.25S1.75 6.35 1.75 12 6.35 22.25 12 22.25 22.25 17.65 22.25 12zM10.5 16.5l-4.5-4.5 1.5-1.5 3 3 6-6 1.5 1.5-7.5 7.5z">
+       </path>
+      </svg>
+     </span>
+     <span class="text-gray-500 text-sm">
+      @splaja_t...
+     </span>
+    </div>
+   </div>
+   </button>
+  </div>
+ </body>
+</html

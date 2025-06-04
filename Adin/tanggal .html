@@ -1,0 +1,77 @@
+<html lang="id" class="scroll-smooth" style="scroll-behavior:smooth;">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jadwalkan</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
+<style>
+  /* Custom scrollbar for iOS style bottom bar */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+</head>
+<body class="bg-black text-white font-sans min-h-screen flex flex-col">
+  
+
+  <!-- Main content -->
+  <main class="flex-grow px-5 pt-5 pb-20">
+    <div class="flex justify-between items-center mb-5">
+     <a href="buat postingan baru.html" 
+     <button aria-label="Close" class="text-white text-2xl font-light leading-none">×
+     </button>
+    </a>
+      <h1 class="font-bold text-lg">Jadwalkan</h1>
+      <a href="jadwalkan.html" 
+      <button class="bg-white text-black font-semibold rounded-full px-6 py-2 text-base leading-none">Konfirmasi
+      </button>
+    </a>
+    </div>
+    <div class="flex items-center space-x-2 mb-3 text-gray-500 text-sm">
+      <i class="far fa-calendar-alt text-lg"></i>
+      <span>Akan dikirim pada Sab, 7 Jun 2025 pukul 2.00 PM</span>
+    </div>
+
+    <form class="space-y-6">
+      <div>
+        <label for="tanggal" class="block mb-1 text-gray-400 text-base">Tanggal</label>
+        <input
+          id="tanggal"
+          type="text"
+          placeholder="Tanggal"
+          value="7 Jun 2025"
+          readonly
+          class="w-full bg-transparent border border-gray-700 rounded-md py-3 text-center text-white text-lg placeholder-gray-600 cursor-default"
+        />
+      </div>
+
+      <div>
+        <label for="waktu" class="block mb-1 text-gray-400 text-base">Waktu</label>
+        <input
+          id="waktu"
+          type="text"
+          placeholder="Waktu"
+          value="02.00"
+          readonly
+          class="w-full bg-transparent border border-gray-700 rounded-md py-3 text-center text-white text-lg placeholder-gray-600 cursor-default"
+        />
+      </div>
+
+      <div>
+        <label class="block mb-1 text-gray-400 text-base">Zona waktu</label>
+        <p class="text-white text-2xl font-normal">Waktu Indonesia Barat</p>
+      </div>
+    </form>
+  </main>
+
+  <!-- Bottom bar -->
+  <footer class="bg-black border-t border-gray-800 py-3 px-5">
+    <a href="postingan terjadwal.html" class="text-blue-500 font-bold text-base">Postingan terjadwal</a>
+  </footer>
+  </nav>
+</body>
+</html>
